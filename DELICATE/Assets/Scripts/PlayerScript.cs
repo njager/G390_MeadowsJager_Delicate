@@ -21,7 +21,7 @@ public class PlayerScript : MonoBehaviour
     }
 
     //called when player enters a trigger
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter(Collider other)
     {
         //if the trigger is a pick up, update count and play sound
         if (other.gameObject.CompareTag("PickUp"))
