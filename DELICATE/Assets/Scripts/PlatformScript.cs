@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class PlatformScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject gameObject;
+    private float timeToDestroy = 1f;
+
+    private void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        
+        print("Exited!");
+        Destroy(gameObject, timeToDestroy);
     }
 }
