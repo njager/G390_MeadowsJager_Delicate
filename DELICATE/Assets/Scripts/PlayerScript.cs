@@ -8,7 +8,9 @@ public class PlayerScript : MonoBehaviour
     //variables
     private int count;
     public TextMeshProUGUI countText;
- 
+    public GameObject gameObject;
+    
+
     void Start()
     {
         SetCountText();
@@ -33,4 +35,15 @@ public class PlayerScript : MonoBehaviour
         }
 
     }
+
+
+    private void Update()
+    {
+        if (count ==4)
+                
+         Destroy(gameObject);
+    }
+        
+    
 }
+

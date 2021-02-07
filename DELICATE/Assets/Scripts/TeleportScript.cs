@@ -34,7 +34,7 @@ public class TeleportScript : MonoBehaviour
     private void TeleportTo()
     {
         thePlayer.transform.position = teleportTarget.transform.position;
-        tpBackTimer = 3f;
+        tpBackTimer = 5f;
     }
 
     //teleports player back to starting location and deletes the whole teleporter to avoid infinite teleporting freezing player
